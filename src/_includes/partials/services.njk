@@ -1,0 +1,29 @@
+<section>
+  <article>
+    <h2>Magánórák</h2>
+    <ul>
+      {% for lesson in services.lessons %}
+        <li>
+          <strong>{{ lesson.name }}</strong>
+          {{ lesson.price }}
+        </li>
+      {% endfor %}
+    </ul>
+  </article>
+  <article>
+    <h2>Tanfolyamok</h2>
+    <h3>5 alkalmas tanfolyamok</h3>
+    <ul>
+      {% for class in services.classes %}
+        <li>
+          {{ class.name | safe }}
+        </li>
+      {% endfor %}
+    </ul>
+    <hr>
+    <strong>Ár:</strong> 14000 Ft + felszerelés (2500 Ft)
+  </article>
+  <footer>
+    * A felszerelés kölcsönzési díja 500 Ft/alkalom/fő
+  </footer>
+</section>

@@ -1,0 +1,9 @@
+<section>
+  <h2>Gyakori kérdések</h2>
+  <dl>
+    {% for item in faq %}
+      <dt>{{ item.question }}</dt>
+      <dd>{{ item.answer | safe }}</dd>
+    {% endfor %}
+  </dl>
+</section>

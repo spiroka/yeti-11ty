@@ -1,0 +1,9 @@
+<section>
+  <h2>Híreink</h2>
+  {% for post in collections.news %}
+    <article>
+      <a href="{{ post.url }}"><h3>{{ post.data.title }}</h3></a>
+      <p>{{ post.data.excerpt }}</p>
+    </article>
+  {% endfor %}
+</section>

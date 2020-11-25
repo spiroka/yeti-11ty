@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A szegedi YetiSí síiskola hivatalos oldala">
+  <meta keywords="yeti,szeged,yetisí,sí,síiskola,Szeged,szegedi,szerviz">
+  <title>{{ title }}</title>
+  <style>
+    {% css %}
+      {% include "styles/style.css" %}
+    {% endcss %}
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </article>
+  </main>
+</body>
+</html>

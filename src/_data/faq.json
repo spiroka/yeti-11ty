@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Mikor vannak a foglalkozások?",
+    "answer": "Hétköznap délutánonként 15-19 óra között (külön egyeztetés alapján délelőtt is), hétvégén egész nap 10-19 óra között."
+  },
+  {
+    "question": "Hogyan tudok jelentkezni?",
+    "answer": "Az <a href=\"mailto:info@yetisiszeged.hu\">info@yetisiszeged.hu</a> email-címen a következő adatokkal: név, életkor (gyerekeknél), testmagasság, lábméret, illetve magánóra esetén néhány időpont javaslattal."
+  },
+  {
+    "question": "Milyen ruhát vigyek magammal az órára?",
+    "answer": "Időjárásnak megfelelő zárt (\"játszós\") ruházat, hosszú szárú zokni (sízokni), kesztyű."
+  },
+  {
+    "question": "Van lehetőség óra pótlására?",
+    "answer": "Tanfolyamainkon egy elmulasztott óra pótlására van lehetőség, a szezon ideje alatt."
+  },
+  {
+    "question": "Mikor és hogyan tudok fizetni?",
+    "answer": "<strong>Tanfolyam:</strong> a jelentkezéskor (a helyszínen) fizetendő, a tanfolyam teljes összege.<br><strong>Magánóra:</strong> a foglalkozások végén.<br>Mindkét esetben a helyszínen, készpénzben."
+  },
+  {
+    "question": "Milyen felszerelést biztosít a síiskola?",
+    "answer": "Sí-és snowboard cipő, síléc, snowboard, síbot, sisak (akinek van saját cipője, azt érdemes használnia)."
+  }
+]
