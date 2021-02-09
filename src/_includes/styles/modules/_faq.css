@@ -1,0 +1,21 @@
+.faq {
+  @media (min-width: 37.5em) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: calc(1em * var(--line-height-base));
+    grid-auto-flow: column;
+
+    & *:nth-of-type(odd) {
+      grid-column: 1;
+    }
+
+    & *:nth-of-type(even) {
+      grid-column: 2;
+    }
+  }
+
+  & dd {
+    margin-bottom: calc(1em * var(--line-height-base));
+  }
+}

@@ -1,13 +1,23 @@
 ---
 layout: layouts/base.njk
-title: My first eleventy project
+title: Yetisí Szeged
 ---
 <header>
-  {% include "partials/banner.njk" %}
+  <div class="container-fluid">
+    {% include "partials/banner.njk" %}
+  </div>
 </header>
 <main>
-  {% include "partials/about.njk" %}
-  {% include "partials/services.njk" %}
-  {% include "partials/faq.njk" %}
-  {% include "partials/news.njk" %}
+  <div class="container">
+    {% include "partials/about.njk" %}
+  </div>
+  <div class="container-fluid">
+    {% include "partials/services.njk" %}
+  </div>
+  <div class="container">
+    {% include "partials/faq.njk" %}
+  </div>
+  <div class="container-fluid">
+    {% include "partials/news.njk" %}
+  </div>
 </main>

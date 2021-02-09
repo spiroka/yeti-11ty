@@ -6,8 +6,8 @@
     { "name": "4 fő/55 perc", "price": "9500 Ft + felszerelés*" }
   ],
   "classes": [
-    { "name": "<strong>1.0 kezdő tanfolyam</strong> (\"csúszó-mászó\")" },
-    { "name": "<strong>2.0 kezdő tanfolyam</strong> (\"2. felvonás\")" },
-    { "name": "<strong>Haladó tanfolyam</strong> (\"csúcstámadás\")" }
+    { "name": "1.0 kezdő tanfolyam",  "title": "(\"csúszó-mászó\")" },
+    { "name": "2.0 kezdő tanfolyam",  "title": "(\"2. felvonás\")" },
+    { "name": "Haladó tanfolyam",  "title": "(\"csúcstámadás\")" }
   ]
 }

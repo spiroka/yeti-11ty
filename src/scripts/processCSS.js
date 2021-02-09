@@ -7,6 +7,8 @@ const cssProcessor = postcss([
   postcssImport(),
   postcssPresetEnv({
     stage: 3,
+    autoprefixer: { grid: 'autoplace' },
+    browsers: ['> 1%'],
     features: {
       'nesting-rules': true,
     },

@@ -12,7 +12,8 @@ function purgeCSSTransform(content, outputPath) {
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPairedNunjucksAsyncShortcode('css', processCSS);
   eleventyConfig.addTransform('purge-css', purgeCSSTransform);
- 
+  eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
+
   return {
     dir: {
       input: 'src',
