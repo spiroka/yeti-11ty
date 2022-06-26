@@ -26,18 +26,10 @@
 
   &:nth-child(odd) {
     grid-column: 1;
-
-    @media (min-width: 64em) {
-      justify-self: end;
-    }
   }
 
   &:nth-child(even) {
     grid-column: 2;
-
-    @media (min-width: 64em) {
-      justify-self: start;
-    }
   }
 
   @media (min-width: 64em) {

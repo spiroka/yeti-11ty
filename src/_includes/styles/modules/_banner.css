@@ -1,9 +1,7 @@
 .banner {
   position: relative;
-  background-image: url(images/banner_background.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 25em;
+  height: 40em;
+  background-color: var(--color-primary);
   color: white;
   overflow: hidden;
 
