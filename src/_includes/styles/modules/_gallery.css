@@ -1,0 +1,26 @@
+.gallery {
+  margin-bottom: calc(1.5em * var(--line-height-base));
+
+  & .gallery__items {
+    white-space: nowrap;
+    animation: slide 10s infinite;
+
+    & .gallery__item {
+      height: 400px;
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  90% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

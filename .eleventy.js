@@ -1,5 +1,5 @@
-const processCSS = require('./src/scripts/processCSS');
-const purgeCSSFromHtml = require('./src/scripts/purgeUnusedCSS');
+const processCSS = require('./scripts/processCSS');
+const purgeCSSFromHtml = require('./scripts/purgeUnusedCSS');
 
 function purgeCSSTransform(content, outputPath) {
   if (outputPath.endsWith('.html')) {

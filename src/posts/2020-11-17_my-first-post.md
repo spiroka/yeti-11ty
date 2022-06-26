@@ -1,6 +1,6 @@
 ---
-title: My first post!
-excerpt: This is my first post
+title: Romániai sítábor
+excerpt: Sitabor Romániában. 2022.02.10. - 2022.02.14.
 permalink: hirek/{{ title | slug }}/
 layout: layouts/post.njk
 tags: news

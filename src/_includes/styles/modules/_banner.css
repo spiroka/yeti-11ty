@@ -1,0 +1,24 @@
+.banner {
+  position: relative;
+  background-image: url(images/banner_background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 25em;
+  color: white;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20em;
+    width: 100%;
+    height: 25em;
+    background: white;
+    clip-path: url(#wave);
+  }
+
+  #wave {
+    opacity: 0;
+  }
+}

@@ -1,9 +1,11 @@
-<section>
+<section class="news container">
   <h2>Híreink</h2>
   {% for post in collections.news %}
-    <article>
-      <a href="{{ post.url }}"><h3>{{ post.data.title }}</h3></a>
-      <p>{{ post.data.excerpt }}</p>
-    </article>
+    <a href="{{ post.url }}" class="news__article" arial-label="{{ post.data.title }}">
+      <article>
+        <h3 class="h4">{{ post.data.title }}</h3>
+        <p>{{ post.data.excerpt }}</p>
+      </article>
+    </a>
   {% endfor %}
 </section>

@@ -1,0 +1,21 @@
+.news {
+  & .news__article {
+    display: block;
+    text-decoration: none;
+    border-left: 3px solid var(--color-dark);
+    color: var(--color-dark);
+
+    &:visited {
+      color: inherit;
+    }
+
+    & article {
+      margin-left: 10px;
+    }
+
+    & h3 {
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+  }
+}
