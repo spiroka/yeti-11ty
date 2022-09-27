@@ -1,5 +1,6 @@
 .gallery {
   margin-bottom: calc(1.5em * var(--line-height-base));
+  background: var(--color-dark);
 
   & .gallery__items {
     white-space: nowrap;

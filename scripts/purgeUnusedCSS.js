@@ -5,6 +5,7 @@ async function purgeUnusedCSS(html, css) {
   const result = await new PurgeCSS().purge({
     content: [{ raw: html, extension: 'html' }],
     css: [{ raw: css }],
+    safelist: ['scrolled', 'fonts-loaded']
   });
 
   return result[0].css;

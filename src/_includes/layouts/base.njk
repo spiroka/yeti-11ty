@@ -11,9 +11,8 @@
         {% include "styles/style.css" %}
       {% endcss %}
     </style>
-    <script>
-      {% include "javascript/loadFonts.js" %}
-    </script>
+    <script src="main.js "defer></script>
+    <script src="loadFonts.js" defer></script>
   </head>
   <body>
     {{ content | safe }}

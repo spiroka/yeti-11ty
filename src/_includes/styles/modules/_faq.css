@@ -1,5 +1,5 @@
 .faq {
-  @media (min-width: 37.5em) {
+  @media (--medium-viewport) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;

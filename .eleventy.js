@@ -13,6 +13,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPairedNunjucksAsyncShortcode('css', processCSS);
   eleventyConfig.addTransform('purge-css', purgeCSSTransform);
   eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
+  eleventyConfig.addPassthroughCopy({ 'src/_includes/javascript': '/' });
 
   return {
     dir: {

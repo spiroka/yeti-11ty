@@ -11,8 +11,9 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Excerpt", name: "excerpt", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image" }
       - { name: "permalink", widget: "hidden", default: "hirek/{{ title | slug }}/" }
       - { name: "layout", widget: "hidden", default: "layouts/post.njk" }
       - { name: "tags", widget: "hidden", default: "news" }
-media_folder: src/images
+media_folder: src/public/images
 public_folder: /images

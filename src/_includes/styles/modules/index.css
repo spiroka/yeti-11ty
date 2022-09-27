@@ -1,3 +1,5 @@
+@import "_about";
+@import "_nav";
 @import "_services";
 @import "_button";
 @import "_faq";

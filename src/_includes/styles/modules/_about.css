@@ -1,0 +1,38 @@
+.about {
+  & article {
+    margin: 3em 2.5rem;
+
+    &:first-of-type {
+      margin-bottom: 0;
+    }
+
+    @media (--large-viewport) {
+      display: flex;
+      align-items: flex-start;
+
+      &:nth-of-type(even) {
+        flex-direction: row-reverse;
+
+        & img {
+          order: 1;
+        }
+      }
+    }
+
+    & > * {
+      flex: 1 1 0;
+
+      @media (--large-viewport) {
+        &:first-child {
+          margin-right: 2.5rem;
+        }
+      }
+    }
+
+    & img {
+      min-width: 0;
+      border-radius: 15px;
+      width: 100%;
+    }
+  }
+}

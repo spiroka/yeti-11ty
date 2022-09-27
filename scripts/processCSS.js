@@ -1,10 +1,14 @@
 const postcss = require('postcss');
 const postcssImport = require('postcss-import');
 const postcssPresetEnv = require('postcss-preset-env');
+const postcssCustomMedia = require('postcss-custom-media');
+const postcssMediaMinmax = require('postcss-media-minmax');
 const cssnano = require('cssnano');
 
 const cssProcessor = postcss([
   postcssImport(),
+  postcssCustomMedia(),
+  postcssMediaMinmax(),
   postcssPresetEnv({
     stage: 3,
     autoprefixer: { grid: 'autoplace' },
