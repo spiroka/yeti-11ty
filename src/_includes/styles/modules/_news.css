@@ -3,6 +3,7 @@
   background: var(--color-dark);
   color: white;
   margin-top: 10em;
+  padding-bottom: calc(1.5em * var(--line-height-base));
 
   &::after {
     content: "";
@@ -60,6 +61,7 @@
 
     & a {
       text-decoration: none;
+      color: inherit;
 
       &:visited {
         color: inherit;

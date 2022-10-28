@@ -12,15 +12,15 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0-rc.12",
     "cssnano": "^4.1.10",
     "postcss": "^8.3.9",
     "postcss-custom-media": "^8.0.2",
     "postcss-import": "^13.0.0",
     "postcss-media-minmax": "^5.0.0",
     "postcss-preset-env": "^6.7.0",
-    "purgecss": "^3.0.0",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0"
-  }
+  },
+  "dependencies": {}
 }

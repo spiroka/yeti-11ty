@@ -1,0 +1,18 @@
+{% for post in collections.news %}
+  {% if (loop.index > 3) %}
+    <article class="news__article">
+      <a href="{{ post.url }}" arial-label="{{ post.data.title }}">
+        <img src="{{ post.data.image }}" alt="Article cover image" loading="lazy">
+      </a>
+      <a href="{{ post.url }}" arial-label="{{ post.data.title }}">
+        <h3 class="h4">
+            {{ post.data.title }}
+        </h3>
+        <p>
+            {{ post.data.excerpt }}
+        </p>
+      </a>
+    </article>
+  {% endif %}
+{% endfor %}
+

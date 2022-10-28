@@ -1,19 +1,25 @@
 nav {
+  --nav-text-color: white;
+  --nav-height: 5em;
+  --nav-background-color: transparent;
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  color: white;
+  color: var(--nav-text-color);
   font-size: 0.8em;
   font-weight: bold;
-  height: 5em;
-  line-height: 5em;
+  height: var(--nav-height);
+  line-height: var(--nav-height);
   transition: all 0.5s;
   z-index: 100;
+  background: var(--nav-background-color);
 
-  &.scrolled {
-    background: white;
-    color: var(--color-dark);
+  &.scrolled, &.open {
+    --nav-text-color: var(--color-dark);
+    --nav-background-color: white;
+
     box-shadow:
       1px 1.4px 2.2px rgba(0, 0, 0, 0.02),
       2.4px 3.3px 5.3px rgba(0, 0, 0, 0.028),
@@ -28,12 +34,64 @@ nav {
     justify-content: space-between;
   }
 
+  & button {
+    background: none;
+    border: 0;
+    margin: 0;
+    align-self: center;
+    padding: 0;
+    cursor: pointer;
+
+    &[aria-expanded="true"] + ul {
+      display: block;
+      box-shadow: 0px 30px 40px -30px rgb(0 0 0 / 50%);
+    }
+
+    @media(--medium-viewport) {
+      display: none;
+    }
+  }
+
   & ul {
     list-style-type: none;
+    display: none;
+    position: absolute;
+    top: var(--nav-height);
+    right: 0;
+    background: var(--nav-background-color);
+
+    @media(--medium-viewport) {
+      display: block;
+      position: initial;
+      background: none;
+    }
   }
 
   & li {
-    display: inline-block;
     padding: 0 1em;
+
+    @media(--medium-viewport) {
+      display: inline-block;
+    }
+    
+    & a {
+      text-decoration: none;
+      color: var(--nav-text-color);
+
+      &[aria-current="location"] {
+        color: red;
+      }
+    }
+  }
+  
+  & svg {
+    height: 2em;
+    width: 2em;
+    align-self: center;
+    fill: var(--nav-text-color);
+
+    &:active + ul {
+      display: block;
+    }
   }
 }

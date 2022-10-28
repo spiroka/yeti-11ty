@@ -31,10 +31,6 @@ body {
     line-height:1;
 }
 
-main {
-    overflow: hidden;
-}
-
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section { 
     display:block;

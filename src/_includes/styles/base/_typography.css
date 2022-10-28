@@ -55,7 +55,7 @@
 
 :root {
   --modular-scale-base: 1.2;
-  --font-size-base: 0.9em;
+  --font-size-base: 1em;
   --font-size-h5: calc(var(--font-size-base) * var(--modular-scale-base));
   --font-size-h4: calc(var(--font-size-h5) * var(--modular-scale-base));
   --font-size-h3: calc(var(--font-size-h4) * var(--modular-scale-base));
@@ -64,11 +64,11 @@
   --line-height-base: 1.5;
 
   @media (--medium-viewport) {
-    --font-size-base: 1em;
+    --font-size-base: 1.1em;
   }
 
   @media (--large-viewport) {
-    --font-size-base: 1.1em;
+    --font-size-base: 1.2em;
   }
 }
 
@@ -102,38 +102,39 @@ h5,
 h1,
 .h1 {
   font-size: var(--font-size-h1);
-  margin-bottom: calc(0.5em * var(--line-height-base));
+  margin-bottom: calc(0.3em * var(--line-height-base));
 }
 
 h2,
 .h2 {
   font-size: var(--font-size-h2);
-  margin-bottom: calc(0.5em * var(--line-height-base));
+  margin-bottom: calc(0.3em * var(--line-height-base));
 }
 
 h3,
 .h3 {
   font-size: var(--font-size-h3);
-  margin-bottom: calc(0.2em * var(--line-height-base));
+  margin-bottom: calc(0.1em * var(--line-height-base));
 }
 
 h4,
 .h4 {
   font-size: var(--font-size-h4);
-  margin-bottom: calc(0.2em * var(--line-height-base));
+  margin-bottom: calc(0.1em * var(--line-height-base));
 }
 
 h5,
 .h5 {
   font-size: var(--font-size-h5);
-  margin-bottom: calc(0.2em * var(--line-height-base));
+  margin-bottom: calc(0.1em * var(--line-height-base));
 }
 
 dl,
 ul,
 ol,
 p,
-button {
+button,
+summary {
   font-size: var(--font-size-base);
   margin-bottom: calc(1.5em * var(--line-height-base));
 }
@@ -141,3 +142,13 @@ button {
 dt {
   font-weight: 700;
 }
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

@@ -1,3 +1,17 @@
+@keyframes floating {
+  0% {
+    transform: translateY(0em);
+  }
+
+  50% {
+    transform: translateY(2em);
+  }
+
+  0% {
+    transform: translateY(0em);
+  }
+}
+
 .banner {
   position: relative;
   height: 30em;
@@ -14,19 +28,35 @@
     @media (--medium-viewport) {
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
     }
   }
 
-  & .banner__text {
-    @media (--medium-viewport) {
-      width: 50%;
+  & .banner__images {
+    justify-self: center;
+    margin: 0 auto;
+    display: none;
+
+    @media(--medium-viewport) {
+      display: block;
+
+      & img {
+        height: 15em;
+        animation: 3s ease-in-out infinite floating;
+   
+        @media(prefers-reduced-motion) {
+          animation: none;
+        }
+      }
+    }
+
+    @media(--large-viewport) {
+      & img {
+        height: 20em;
+      }
     }
   }
 
-  & h1 {
-    margin-bottom: 0;
-  }
+  
 
   &::after {
     content: "";

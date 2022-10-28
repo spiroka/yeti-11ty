@@ -1,11 +1,25 @@
+:root {
+  --button-font-size: var(--font-size-base);
+}
+
+p a {
+  --button-font-size: 1em;
+}
+
 .button {
-  background-color: white;
+  background-color: transparent;
+  font-size: var(--button-font-size);
+  line-height: 1em;
   color: var(--color-secondary);
   border: 2px solid var(--color-secondary);
   padding: 0.75em 1em;
   width: auto;
   border-radius: 0.5em;
   transition: background-color 0.5s, color 0.5s;
+
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 
   &:hover,
   &.fill {

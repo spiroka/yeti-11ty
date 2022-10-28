@@ -1,9 +1,10 @@
 {
   "lessons": [
-    { "name": "1 fő/55 perc", "price": "4500 Ft + felszerelés*" },
-    { "name": "2 fő/55 perc", "price": "6500 Ft + felszerelés*" },
-    { "name": "3 fő/55 perc", "price": "8000 Ft + felszerelés*" },
-    { "name": "4 fő/55 perc", "price": "9500 Ft + felszerelés*" }
+    { "name": "1 fő/55 perc", "price": "7000 Ft" },
+    { "name": "2 fő/55 perc", "price": "10000 Ft" },
+    { "name": "3 fő/55 perc", "price": "13500 Ft" },
+    { "name": "4 fő/55 perc", "price": "16000 Ft" },
+    { "name": "5 fő/55 perc", "price": "17500 Ft" }
   ],
   "classes": [
     { "name": "1.0 kezdő tanfolyam",  "title": "(\"csúszó-mászó\")" },

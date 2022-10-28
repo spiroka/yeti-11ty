@@ -1,23 +1,25 @@
-<section class="news">
+<section class="news" data-region-name="news">
   <div class="container news__container">
-    <h2>Híreink</h2>
-    <div class="news__article-container">
+    <h2>Hírek</h2>
+    <div id="news-container" class="news__article-container">
       {% for post in collections.news %}
-        <article class="news__article">
-          <a href="{{ post.url }}" arial-label="{{ post.data.title }}">
-            <img src="{{ post.data.image }}" alt="Article cover image" loading="lazy">
-          </a>
-          <a href="{{ post.url }}" arial-label="{{ post.data.title }}">
-            <h3 class="h4">
-                {{ post.data.title }}
-            </h3>
-            <p>
-                {{ post.data.excerpt }}
-            </p>
-          </a>
-        </article>
-    {% endfor %}
+        {% if (loop.index <= 3) %}
+          <article class="news__article">
+            <a href="{{ post.url }}" arial-label="{{ post.data.title }}">
+              <img src="{{ post.data.image }}" alt="Article cover image" loading="lazy">
+            </a>
+            <a href="{{ post.url }}" arial-label="{{ post.data.title }}">
+              <h3 class="h4">
+                  {{ post.data.title }}
+              </h3>
+              <p>
+                  {{ post.data.excerpt }}
+              </p>
+            </a>
+          </article>
+        {% endif %}
+      {% endfor %}
     </div>
-    <a class="button fill">ÖSSZES HÍR</a>
+    <a id="all-news" class="button fill">ÖSSZES HÍR</a>
   </div>
 </section>

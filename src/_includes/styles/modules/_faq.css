@@ -1,21 +1,19 @@
 .faq {
-  @media (--medium-viewport) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    column-gap: calc(1em * var(--line-height-base));
-    grid-auto-flow: column;
+  background: var(--color-dark);
+  color: white;
 
-    & *:nth-of-type(odd) {
-      grid-column: 1;
+  & .faq__container {
+    & summary {
+      cursor: pointer;
     }
 
-    & *:nth-of-type(even) {
-      grid-column: 2;
+    @media (--medium-viewport) {
+      & {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: calc(1em * var(--line-height-base));
+      }
     }
-  }
-
-  & dd {
-    margin-bottom: calc(1em * var(--line-height-base));
   }
 }
+

@@ -1,0 +1,23 @@
+.post {
+  & .post__title {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    height: 25em;
+    background: linear-gradient(#146082, var(--color-primary));
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -20em;
+      width: 100%;
+      min-height: 25em;
+      background: white;
+      clip-path: url(#wave);
+    }
+  }
+}

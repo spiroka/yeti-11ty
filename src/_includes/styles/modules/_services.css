@@ -95,14 +95,14 @@
 
   & dl {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
 
     & dt {
       text-align: left;
     }
 
     & dd {
-      text-align: left;
+      text-align: right;
     }
   }
 }
@@ -116,10 +116,3 @@
   align-items: center;
 }
 
-.services__footer {
-  justify-self: center;
-  text-align: center;
-  grid-row: 2;
-  grid-column: 1 / span 2;
-  z-index: 10;
-}
