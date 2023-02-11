@@ -16,6 +16,7 @@ p a {
   width: auto;
   border-radius: 0.5em;
   transition: background-color 0.5s, color 0.5s;
+  cursor: pointer;
 
   @media (prefers-reduced-motion) {
     transition: none;

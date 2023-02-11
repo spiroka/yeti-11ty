@@ -1,56 +1,79 @@
 .about {
-  & article {
-    display: flex;
-    margin: 3em 0;
-    flex-direction: column;
+  --instructor-height: 24rem;
 
-    &:first-of-type {
-      margin-bottom: 0;
-    }
+  margin: 0 auto calc(6em * var(--line-height-base));
 
-    &:nth-of-type(even) {
-      flex-direction: column-reverse;
-      
-      @media (--large-viewport) {
-        flex-direction: row;
-      }
+  & .instructors {
+    display: grid;
+    gap: 2em;
+
+    @media (--medium-viewport) {
+      grid-template-columns: 1fr 1fr;
     }
 
     @media (--large-viewport) {
-      align-items: flex-start;
-      flex-direction: row;
+      grid-template-columns: 1fr 1fr 1fr;
     }
+  }
 
-    & > * {
-      flex: 1 1 0;
-      top: 6em;
+  & .instructors__instructor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: var(--instructor-height);
+    width: 100%;
+    color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 1;
+    padding: 2rem;
+    box-shadow:
+      1px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+      2.4px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+      4.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+      8px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+      15px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+      36px 100px 80px rgba(0, 0, 0, 0.07);
 
-      @media (--large-viewport) {
-        position: sticky;
-     
-        &:first-child {
-          margin-right: 2.5rem;
-        }
-      }
-    }
-
-    & img {
-      min-width: 0;
-      border-radius: 15px;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      box-shadow:
-        1px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-        2.4px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-        4.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-        8px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-        15px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-        36px 100px 80px rgba(0, 0, 0, 0.07);
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
     }
 
-    & p a:last-of-type {
-      display: block;
-      margin-top: 1em;
+    & .instructors__instructor-title {
+      margin-bottom: calc(0.5em * var(--line-height-base));
+      z-index: 2;
+      font-size: 0.9em;
+      font-weight: 300;
+      font-style: italic;
+    }
+
+    & .instructors__instructor-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    & h4 {
+      font-size: 1.2em;
+      z-index: 2;
+    }
+
+    & p {
+      position: relative;
+      font-size: 0.9em;
+      margin-bottom: 0;
+      z-index: 2;
     }
   }
 }
-

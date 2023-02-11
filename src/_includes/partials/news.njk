@@ -1,4 +1,4 @@
-<section class="news" data-region-name="news">
+<section id="news" class="news" data-region-name="news">
   <div class="container news__container">
     <h2>Hírek</h2>
     <div id="news-container" class="news__article-container">
@@ -20,6 +20,7 @@
         {% endif %}
       {% endfor %}
     </div>
-    <a id="all-news" class="button fill">ÖSSZES HÍR</a>
+    <a id="all-news" class="button fill" href="">ÖSSZES HÍR</a>
+    {% include "partials/spinner.njk" %}
   </div>
 </section>

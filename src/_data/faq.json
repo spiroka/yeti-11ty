@@ -5,7 +5,7 @@
   },
   {
     "question": "Hogyan tudok jelentkezni?",
-    "answer": "Az <a href=\"mailto:info@yetisiszeged.hu\">info@yetisiszeged.hu</a> email-címen a következő adatokkal: név, életkor (gyerekeknél), testmagasság, lábméret, illetve magánóra esetén néhány időpont javaslattal."
+    "answer": "Az <a class=\"mailto\" href=\"mailto:EMAIL\">email-címünkön</a> a következő adatokkal: név, életkor (gyerekeknél), testmagasság, lábméret, illetve magánóra esetén néhány időpont javaslattal."
   },
   {
     "question": "Milyen ruhát vigyek magammal az órára?",

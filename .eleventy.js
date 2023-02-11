@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPairedNunjucksAsyncShortcode('css', processCSS);
   eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
   eleventyConfig.addPassthroughCopy({ 'src/_includes/javascript': '/' });
+  eleventyConfig.addNunjucksShortcode('currentYear', () => new Date().getFullYear().toString());
 
   return {
     dir: {

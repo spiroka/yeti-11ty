@@ -1,6 +1,6 @@
 @keyframes floating {
   0% {
-    transform: translateY(0em);
+    transform: translateY(0);
   }
 
   50% {
@@ -8,7 +8,7 @@
   }
 
   0% {
-    transform: translateY(0em);
+    transform: translateY(0);
   }
 }
 
@@ -36,27 +36,19 @@
     margin: 0 auto;
     display: none;
 
-    @media(--medium-viewport) {
+    @media (--large-viewport) {
       display: block;
+      animation: 3s ease-in-out infinite floating;
 
-      & img {
-        height: 15em;
-        animation: 3s ease-in-out infinite floating;
-   
-        @media(prefers-reduced-motion) {
-          animation: none;
-        }
-      }
-    }
-
-    @media(--large-viewport) {
       & img {
         height: 20em;
       }
+
+      @media (prefers-reduced-motion) {
+        animation: none;
+      }
     }
   }
-
-  
 
   &::after {
     content: "";

@@ -1,0 +1,37 @@
+<section class="container" data-region-name="prices">
+  <h2 id="prices">Árak</h2>
+  <div class="prices">
+    <article class="prices__item">
+      <h3 class="prices__item__header prices__item__header--left">Magánórák</h3>
+      <div class="prices__item__content">
+        <dl>
+          {% for lesson in services.lessons %}
+              <dt>{{ lesson.name }}</dt>
+              <dd>{{ lesson.price }}</dd>
+          {% endfor %}
+        </dl>
+      </div>
+      <footer class="prices__item__footer">
+        <a class="button mailto" href="mailto:EMAIL?subject=Magánóra jelentkezés">JELENTKEZEM MAGÁNÓRÁRA</a>
+      </footer>
+    </article>
+    <article class="prices__item">
+      <h3 class="prices__item__header prices__item__header--right">Tanfolyamok</h3>
+      <div class="prices__item__content">
+        <h4>5 alkalmas tanfolyamok</h4>
+        <dl>
+          {% for class in services.classes %}
+            <dt>{{ class.name }}</dt>
+            <dd>{{ class.title }}</dd>
+          {% endfor %}
+        </dl>
+        <p>
+          <strong>Ár:</strong> 15000 Ft 
+        </p>
+      </div>
+      <footer class="prices__item__footer">
+        <a class="button mailto" href="mailto:EMAIL?subject=Tanfolyam jelentkezés">JELENTKEZEM TANFOLYAMRA</a>
+      </footer>
+    </article>
+  </div>
+</section>

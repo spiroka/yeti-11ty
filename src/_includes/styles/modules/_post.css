@@ -1,4 +1,6 @@
 .post {
+  margin-bottom: calc(3em * var(--line-height-base));
+
   & .post__title {
     display: flex;
     align-items: center;
@@ -19,5 +21,26 @@
       background: white;
       clip-path: url(#wave);
     }
+
+    & h1 {
+      margin: 0;
+    }
+
+    & .post__timestamp {
+      font-weight: 300;
+      font-size: calc(0.8 * var(--font-size-base));
+    }
+
+    & a {
+      position: absolute;
+      font-size: var(--font-size-base);
+      top: calc(var(--line-height-base) * 1em);
+    }
+  }
+
+  & p img {
+    display: block;
+    max-width: 80%;
+    margin: calc(1em * var(--line-height-base)) auto;
   }
 }

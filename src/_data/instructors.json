@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Takács Péter",
+    "title": "Tulajdonos, síiskola vezető",
+    "intro": "A mai napig legfontosabb számomra tudásom gyarapítása, és továbbadása annak reményében, hogy tanítványaim is életre szóló élményekhez jussanak általa.",
+    "image": "/images/tp.jpg"
+  },
+  {
+    "name": "Keresztes László",
+    "title": "Tulajdonos",
+    "intro": "SMSZ síoktatóként nem csak szigorúan véve magát a sportot, hanem a vele járó jelenségek és szabályok ismertetését is fontosnak tartom (természetismeret, környezetvédelem, turisztikai ismeretek).",
+    "image": "/images/kl.jpg"
+  },
+  {
+    "name": "Kecskés Tibor",
+    "title": "ISE síoktató",
+    "intro": "Telente iskolai sítáborokban oktatóként dolgozom, és rendszeresen részt veszek sí-szakmai továbbképzéseken.",
+    "image": "/images/kt.jpg"
+  },
+  {
+    "name": "Mara Péter",
+    "title": "SMSZ síoktató*",
+    "intro": "A szegedi Déri Miksa Szakközép iskolában testnevelő tanár és szakképzett síoktatóként, több mint 30 évig szerveztem és vezettem iskolai és felnőtt sítáborokat.",
+    "image": "/images/mp.jpg"
+  },
+  {
+    "name": "Engi Zoltán",
+    "title": "ISE síoktató",
+    "intro": "Nem hinném, hogy bárki is belekóstolt volna az igazi életbe, amíg nem volt síléc a lábán — Andrew Irvine",
+    "image": "/images/ez.jpg"
+  },
+  {
+    "name": "Tokodi Margaréta",
+    "title": "",
+    "intro": "Ski Insructor Level 2 síoktatói képesítéssel rendelkezem, amit Ausztirában a Snowsports Academy-nál végeztem el. A hozzám járó tanítványoknak évek óta szervezek sítúrákat. ",
+    "image": "/images/tm.jpg"
+  },
+  {
+    "name": "Pál Kata",
+    "title": "",
+    "intro": "Műanyagpályán való oktatásaim során a célom az, hogy az első csúszások jó élményként maradjanak meg a lelkes sporttársakban és amikor először a nagy fehér hegy tetején állnak majd, bátran neki tudjanak indulni a kalandnak.",
+    "image": "/images/pk.jpg"
+  }
+]

@@ -53,12 +53,26 @@ regions.forEach((region) => observer.observe(region));
 
 // Fetch all news articles
 const allNewsButton = document.querySelector('#all-news');
-const fetchNews = () => {
+const spinner = document.querySelector('#spinner');
+const fetchNews = (e) => {
+  e.preventDefault();
+  spinner.style.display = 'block';
+  allNewsButton.remove();
   fetch('/news')
     .then((response) => response.text())
-    .then((html) => document.querySelector("#news-container")
-      .insertAdjacentHTML('beforeend', html)
-    );
+    .then((html) => {
+      document.querySelector("#news-container")
+        .insertAdjacentHTML('beforeend', html)
+      spinner.remove();
+    });
 };
 allNewsButton.addEventListener('click', fetchNews);
+
+// Prevent email scraping
+const links = document.querySelectorAll('.mailto');
+const name = 'info';
+const host = 'yetisiszeged.hu';
+links.forEach((link) => {
+  link.href = link.href.replace('EMAIL', `${name}@${host}`);
+});
 

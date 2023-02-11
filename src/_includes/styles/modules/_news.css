@@ -1,21 +1,8 @@
 .news {
   position: relative;
-  background: var(--color-dark);
-  color: white;
-  margin-top: 10em;
-  padding-bottom: calc(1.5em * var(--line-height-base));
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -10em;
-    width: 100%;
-    min-height: 25em;
-    background: var(--color-dark);
-    clip-path: url(#wave);
-    z-index: -1;
-  }
+  background: white;
+  color: var(--color-dark);
+  margin: calc(2em * var(--line-height-base)) 0 calc(6em * var(--line-height-base));
 
   & .news__container {
     display: flex;
@@ -36,11 +23,8 @@
   }
 
   & .news__article {
-    & h3 {
-      font-weight: 300;
-    }
-
     & img {
+      position: relative;
       aspect-ratio: 1.5 / 1;
       object-fit: cover;
       width: 100%;
@@ -57,6 +41,8 @@
         8px 22.3px 17.9px rgba(0, 0, 0, 0.042),
         15px 41.8px 33.4px rgba(0, 0, 0, 0.05),
         36px 100px 80px rgba(0, 0, 0, 0.07);
+      transform: scale(105%);
+      z-index: 2;
     }
 
     & a {

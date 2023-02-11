@@ -1,22 +1,17 @@
-<section id="services" class="container about" data-region-name="services">
-  <article>
-    <div>
-      <h2>Magánórák</h2>
-      <p>
-        Síiskolánkat 2015-ben nyitottuk meg Szegeden, 2017-ben költöztünk mostani helyünkre, a Kálvária Ipari Parkba, ahol pályánk kialakításában korábbi tapasztalatainkat is figyelembe vettük.
-        <a href="#prices">Jelentkezem >></a>
-      </p>
-    </div>
-    <img src="images/skier.jpg" alt="">
-  </article>
-  <article>
-    <img src="images/skis.jpg" alt="">
-    <div>
-      <h2>Tanfolyamok</h2>
-      <p>
-        Síiskolánkat 2015-ben nyitottuk meg Szegeden, 2017-ben költöztünk mostani helyünkre, a Kálvária Ipari Parkba, ahol pályánk kialakításában korábbi tapasztalatainkat is figyelembe vettük.
-        <a href="#prices">Jelentkezem >></a>
-      </p>
-    </div>
-  </article>
+<section class="container about" data-region-name="about">
+  <h2 id="about">Rólunk</h2>
+  <p>
+    Síiskolánkat 2015-ben nyitottuk meg Szegeden, 2017-ben költöztünk mostani helyünkre, a Kálvária Ipari Parkba, ahol pályánk kialakításában korábbi tapasztalatainkat is figyelembe vettük. Műanyag pályákon az alapoktól a carving síelés elsajátításáig, bármely korosztály számára biztosítunk oktatást. A sportos, időjárásnak megfelelő, zárt ruházaton kívül az oktatáshoz szükséges összes felszerelést mi biztosítjuk.
+  </p>
+  <h3>Oktatóink</h3>
+  <div class="instructors">
+    {% for instructor in instructors %}
+      <div class="instructors__instructor">
+        <h4>{{ instructor.name }}</h4>
+        <span class="instructors__instructor-title">{{ instructor.title }}</span>
+        <p>”{{ instructor.intro }}”</p>
+        <div class="instructors__instructor-img" style="background-image: url({{ instructor.image }})"></div>
+      </div>
+    {% endfor %}
+  </div>
 </section>

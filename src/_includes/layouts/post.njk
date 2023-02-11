@@ -17,13 +17,18 @@
     <main>
       <article class="post">
         <div class="post__title">
-          <h1 class="container">{{ title }}</h1>
+          <div class="container">
+            <a href="/"><< Vissza</a>
+            <h1>{{ title }}</h1>
+            <p class="post__timestamp">{{ timestamp }}</p>
+          </div>
         </div>
         <div class="container">
           {{ content | safe }}
         </div>
       </article>
     </main>
+    {% include "partials/footer.njk" %}
     {% include "partials/wave.njk" %}
   </body>
 </html>
