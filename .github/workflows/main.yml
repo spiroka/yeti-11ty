@@ -19,9 +19,9 @@ jobs:
           npm install
           npm run build
       - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@3.0.0
+        uses: SamKirkland/FTP-Deploy-Action@v3.1.2-patch
         with:
-          ftp-server: ftp://ftp.yetisiszeged.hu/
-          ftp-username: yetideploy@beta.yetisiszeged.hu
-          ftp-password: ${{ secrets.FTP_PWD }}
+          server: ftp://ftp.yetisiszeged.hu/
+          username: yetidYetisibetadeployeploy@beta.yetisiszeged.hu
+          password: ${{ secrets.FTP_PWD }}
           local-dir: _site/
