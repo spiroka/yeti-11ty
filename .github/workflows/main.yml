@@ -10,7 +10,7 @@ jobs:
           fetch-depth: 2
 
       - name: Use Node.js 18.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: '18.x'
 
@@ -21,7 +21,7 @@ jobs:
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          server: ftp://ftp.yetisiszeged.hu/
-          username: yetidYetisibetadeployeploy@beta.yetisiszeged.hu
+          server: ftp.yetisiszeged.hu
+          username: yetideploy@beta.yetisiszeged.hu
           password: ${{ secrets.FTP_PWD }}
           local-dir: _site/
