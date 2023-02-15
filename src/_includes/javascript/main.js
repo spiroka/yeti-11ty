@@ -11,9 +11,9 @@ window.addEventListener('scroll', () => {
 const navToggle = document.querySelector('#nav-toggle');
 
 // Close navigation drawer when focus moves out of navbar
-nav.addEventListener('focusout', () => {
+nav.addEventListener('focusout', (e) => {
   const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-  if (isExpanded && !nav.contains(document.activeElement)) {
+  if (isExpanded && !nav.contains(e.relatedTarget)) {
     toggleNavigation();
   }
 });
