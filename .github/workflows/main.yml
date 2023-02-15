@@ -19,7 +19,7 @@ jobs:
           npm install
           npm run build
       - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@v3.1.2-patch
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.3
         with:
           server: ftp://ftp.yetisiszeged.hu/
           username: yetidYetisibetadeployeploy@beta.yetisiszeged.hu
