@@ -1,0 +1,27 @@
+on: push
+name: Generate static site and deploy
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 2
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '18.x'
+
+      - name: Generate static site
+        run: |
+          npm install
+          npm run build
+      - name: FTP-Deploy-Action
+        uses: SamKirkland/FTP-Deploy-Action@3.0.0
+        with:
+          ftp-server: ftp://ftp.yetisiszeged.hu/
+          ftp-username: yetideploy@beta.yetisiszeged.hu
+          ftp-password: ${{ secrets.FTP_PWD }}
+          local-dir: _site/

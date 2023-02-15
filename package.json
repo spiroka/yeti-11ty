@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
     "cms": "npx concurrently 'npx netlify-cms-proxy-server' 'cd src/admin && npx http-server -p 8082'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^2.0.0",
     "cheerio": "^1.0.0-rc.12",
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.1.14",
     "postcss": "^8.3.9",
     "postcss-color-mod-function": "^3.0.3",
     "postcss-custom-media": "^8.0.2",
