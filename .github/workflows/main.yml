@@ -4,6 +4,7 @@ on:
 name: Test > Build > Deploy
 jobs:
   test:
+    name: Lint & Test
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -27,7 +28,8 @@ jobs:
         retention-days: 30
 
   deploy:
-    name: FTP-Deploy-Action
+    needs: test
+    name: Build & Deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
