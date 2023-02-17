@@ -3,3 +3,6 @@ _site/
 src/.DS_Store
 .DS_Store
 npm-debug.log
+/test-results/
+/playwright-report/
+/playwright/.cache/

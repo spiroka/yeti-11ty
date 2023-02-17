@@ -4,15 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx @11ty/eleventy --serve",
+    "start:dev": "npx @11ty/eleventy --serve",
+    "start:test": "NODE_ENV=test npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "cms": "npx concurrently 'npx netlify-cms-proxy-server' 'cd src/admin && npx http-server -p 8082'"
+    "build:test": "NODE_ENV=test npx @11ty/eleventy",
+    "cms": "npx concurrently 'npx netlify-cms-proxy-server' 'cd src/admin && npx http-server -p 8082'",
+    "test:lint": "npx stylelint src/**/*.css",
+    "test:e2e": "npx playwright test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
+    "@playwright/test": "^1.30.0",
     "cheerio": "^1.0.0-rc.12",
     "cssnano": "^5.1.14",
     "postcss": "^8.3.9",
