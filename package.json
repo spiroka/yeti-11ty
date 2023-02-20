@@ -17,6 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
+    "@axe-core/playwright": "^4.6.0",
     "@playwright/test": "^1.30.0",
     "cheerio": "^1.0.0-rc.12",
     "cssnano": "^5.1.14",

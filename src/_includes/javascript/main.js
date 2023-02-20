@@ -69,10 +69,15 @@ const fetchNews = (e) => {
 allNewsButton.addEventListener('click', fetchNews);
 
 // Prevent email scraping
-const links = document.querySelectorAll('.mailto');
+const mailToLinks = document.querySelectorAll('.mailto');
+const emailPlaceHolders = document.querySelectorAll('.email-placeholder');
 const name = 'info';
 const host = 'yetisiszeged.hu';
-links.forEach((link) => {
+mailToLinks.forEach((link) => {
   link.href = link.href.replace('EMAIL', `${name}@${host}`);
+});
+
+emailPlaceHolders.forEach((node) => {
+  node.textContent = `${name}@${host}`;
 });
 

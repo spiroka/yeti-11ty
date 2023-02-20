@@ -1,20 +1,22 @@
-@keyframes floating {
+@keyframes rotate {
   0% {
-    transform: translateY(0);
+    transform: rotate(0);
   }
 
   50% {
-    transform: translateY(2em);
+    transform: rotate(4deg);
   }
 
   0% {
-    transform: translateY(0);
+    transform: rotate(0);
   }
 }
 
 .banner {
+  --banner-height: 30em;
+
   position: relative;
-  height: 30em;
+  height: var(--banner-height);
   background: linear-gradient(#146082, var(--color-primary));
   color: white;
   overflow: hidden;
@@ -22,7 +24,6 @@
   & .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100%;
 
     @media (--medium-viewport) {
@@ -32,20 +33,34 @@
   }
 
   & .banner__images {
-    justify-self: center;
-    margin: 0 auto;
+    --banner-image-size: calc(0.8 * var(--banner-height));
+
     display: none;
 
     @media (--large-viewport) {
+      position: relative;
       display: block;
-      animation: 3s ease-in-out infinite floating;
+      height: var(--banner-image-size);
+      width: var(--banner-image-size);
+      margin-left: 10em;
 
       & img {
-        height: 20em;
-      }
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
 
-      @media (prefers-reduced-motion) {
-        animation: none;
+        &#leg, &#arm {
+          animation: ease-in 3s infinite rotate;
+
+          @media (prefers-reduced-motion) {
+            animation: none;
+          }
+        }
+
+        &#arm {
+          animation-delay: 2s;
+        }
       }
     }
   }

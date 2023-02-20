@@ -1,5 +1,5 @@
 .about {
-  --instructor-height: 24rem;
+  --instructor-height: 30rem;
 
   margin: 0 auto calc(6em * var(--line-height-base));
 
@@ -9,10 +9,6 @@
 
     @media (--medium-viewport) {
       grid-template-columns: 1fr 1fr;
-    }
-
-    @media (--large-viewport) {
-      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 
@@ -49,7 +45,6 @@
     & .instructors__instructor-title {
       margin-bottom: calc(0.5em * var(--line-height-base));
       z-index: 2;
-      font-size: 0.9em;
       font-weight: 300;
       font-style: italic;
     }
@@ -65,13 +60,11 @@
     }
 
     & h4 {
-      font-size: 1.2em;
       z-index: 2;
     }
 
     & p {
       position: relative;
-      font-size: 0.9em;
       margin-bottom: 0;
       z-index: 2;
     }
