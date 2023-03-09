@@ -1,14 +1,4 @@
 {
-  "lessons": [
-    { "name": "1 fő/55 perc", "price": "7000 Ft" },
-    { "name": "2 fő/55 perc", "price": "10000 Ft" },
-    { "name": "3 fő/55 perc", "price": "13500 Ft" },
-    { "name": "4 fő/55 perc", "price": "16000 Ft" },
-    { "name": "5 fő/55 perc", "price": "17500 Ft" }
-  ],
-  "classes": [
-    { "name": "1.0 kezdő tanfolyam",  "title": "(\"csúszó-mászó\")" },
-    { "name": "2.0 kezdő tanfolyam",  "title": "(\"2. felvonás\")" },
-    { "name": "Haladó tanfolyam",  "title": "(\"csúcstámadás\")" }
-  ]
+  "lessons": "A haverok elhívtak egy sítúrára, de rég volt már léc a lábadon és szeretnéd kicsit felfrissíteni sítudásod? Esetleg kisgyermekedet szeretnéd megismertetni ezzel a csodálatos sporttal?<br>Válaszd magánóráinkat!",
+  "classes": "Abszolút kezdő vagy és szeretnéd elsajátítani az alapokat első síelésed előtt? Már magabiztosan megy a ”pizza/sültkrumpli”, de szeretnéd kicsit magasabb szintre emelni tudásod?<br>Nálunk biztosan találsz a tudásodnak megfelelő tanfolyamot!"
 }

@@ -5,7 +5,7 @@
       <h3 class="prices__item__header prices__item__header--left">Magánórák</h3>
       <div class="prices__item__content">
         <dl>
-          {% for lesson in services.lessons %}
+          {% for lesson in prices.lessons %}
               <dt>{{ lesson.name }}</dt>
               <dd>{{ lesson.price }}</dd>
           {% endfor %}
@@ -20,7 +20,7 @@
       <div class="prices__item__content">
         <h4>5 alkalmas tanfolyamok</h4>
         <dl>
-          {% for class in services.classes %}
+          {% for class in prices.classes %}
             <dt>{{ class.name }}</dt>
             <dd>{{ class.title }}</dd>
           {% endfor %}
