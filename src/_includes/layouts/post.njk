@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A szegedi YetiSí síiskola hivatalos oldala">
     <meta keywords="yeti,szeged,yetisí,sí,síiskola,Szeged,szegedi,szerviz">
-    <title>{{ title }}</title>
+    <title>{{ meta.title }}</title>
     <style>
       {% css %}
         {% include "styles/style.css" %}
@@ -19,8 +19,8 @@
         <div class="post__title">
           <div class="container">
             <a href="/"><< Vissza</a>
-            <h1>{{ title }}</h1>
-            <p class="post__timestamp">{{ timestamp }}</p>
+            <h1>{{ meta.title }}</h1>
+            <p class="post__timestamp">{{ meta.timestamp }}</p>
           </div>
         </div>
         <div class="container">

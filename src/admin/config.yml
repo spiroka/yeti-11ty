@@ -8,12 +8,16 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - label: "Meta"
+        name: "meta"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Excerpt", name: "excerpt", widget: "text" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Timestamp", name: "timestamp", widget: "datetime", format: "YYYY.MM.DD." }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Timestamp", name: "timestamp", widget: "datetime", format: "YYYY.MM.DD." }
-      - { name: "permalink", widget: "hidden", default: "hirek/{{ title | slug }}/" }
+      - { name: "permalink", widget: "hidden", default: "hirek/{{ meta.title | slug }}/" }
       - { name: "layout", widget: "hidden", default: "layouts/post.njk" }
       - { name: "tags", widget: "hidden", default: "news" }
 media_folder: src/public/images
